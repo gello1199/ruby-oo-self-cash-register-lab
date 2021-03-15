@@ -14,6 +14,7 @@ class CashRegister
         while count <= quantity #use while because we want to count titles that appear more than once
             @items << title
             count += 1
+            # binding.pry
         end
 
         @last_item = price * quantity
